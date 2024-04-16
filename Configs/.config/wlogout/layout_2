@@ -14,14 +14,14 @@
 
 {
     "label" : "shutdown",
-    "action" : "systemctl poweroff",
+    "action" : "pkexec poweroff",
     "text" : "Shutdown",
     "keybind" : "s"
 }
 
 {
     "label" : "reboot",
-    "action" : "systemctl reboot",
+    "action" : "pkexec reboot",
     "text" : "Reboot",
     "keybind" : "r"
 }
