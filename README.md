@@ -27,7 +27,7 @@ https://github.com/prasanthrangan/hyprdots/assets/106020512/c995699a-299c-4a8e-9
 
 ## Installation
 
-The installation script is made for Arch, but **may** work on some Arch based distros with **systemd**.
+The installation script is made for Artix with dinit.
 For Debian, please refer **Senshi111**'s version [here](https://github.com/Senshi111/debian-hyprland-hyprdots).
 Checkout **Ksk**'s [video](https://www.youtube.com/watch?v=mb8h1-LB9K0) for full installation walkthrough.
 
@@ -37,9 +37,9 @@ Checkout **Ksk**'s [video](https://www.youtube.com/watch?v=mb8h1-LB9K0) for full
 
 > [!CAUTION]
 > The script modifies your grub config to enable Nvidia drm and theme.
-> This script is also designed to be done after a minimal arch installation, using it on previously installed desktop should work but will change whatever you currently have (gtk/qt theming, shell, sddm, grub, etc) and is at your own risk.
+> This script is also designed to be done after a minimal artix dinit installation, using it on previously installed desktop should work but will change whatever you currently have (gtk/qt theming, shell, sddm, grub, etc) and is at your own risk.
 
-After a minimal Arch install (with grub and systemd), clone and execute -
+After a minimal Artix with dinit install (with grub and dinit), clone and execute -
 
 ```shell
 pacman -Sy git
