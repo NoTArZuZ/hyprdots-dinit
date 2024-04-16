@@ -41,7 +41,7 @@ Checkout **Ksk**'s [video](https://www.youtube.com/watch?v=mb8h1-LB9K0) for full
 > The script modifies your grub config to enable Nvidia drm and theme.
 > This script is also designed to be done after a minimal artix dinit installation, using it on previously installed desktop should work but will change whatever you currently have (gtk/qt theming, shell, sddm, grub, etc) and is at your own risk.
 
-After a minimal Artix with dinit install (with grub and dinit), clone and execute -
+After a minimal Artix with dinit and grub install, clone and execute -
 
 ```shell
 pacman -Sy git
