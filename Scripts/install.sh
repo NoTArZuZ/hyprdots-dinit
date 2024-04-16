@@ -227,7 +227,7 @@ sudo ln -s /etc/dinit.c/user/wireplumber ~/.config/dinit.d/
 sudo dinitctl enable dbus
 sudo dinitctl enable bluetoothd
 sudo dinitctl enable backlight
-sudo dinitctl enable turnstile
+sudo dinitctl enable turnstiled
 dinit -q &
 dinitctl enable dbus
 dinitctl enable pipewire
