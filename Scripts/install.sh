@@ -208,6 +208,7 @@ if [ ${flg_Service} -eq 1 ]; then
 
 EOF
 # idk how to make it different way :(
+echo "enabling services..."
 sudo ln -s /etc/dinit.c/user/dbus ~/.config/dinit.d/
 sudo ln -s /etc/dinit.c/user/pipewire ~/.config/dinit.d/
 sudo ln -s /etc/dinit.c/user/pipewire-pulse ~/.config/dinit.d/
