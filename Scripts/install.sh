@@ -207,16 +207,17 @@ if [ ${flg_Service} -eq 1 ]; then
 |___|___|_|  \_/|_|___|___|___|
 
 EOF
-
-    while read servChk; do
-
-        if [[ $(systemctl list-units --all -t service --full --no-legend "${servChk}.service" | sed 's/^\s*//g' | cut -f1 -d' ') == "${servChk}.service" ]]; then
-            echo -e "\033[0;33m[SKIP]\033[0m ${servChk} service is active..."
-        else
-            echo -e "\033[0;32m[systemctl]\033[0m starting ${servChk} system service..."
-            sudo systemctl enable "${servChk}.service"
-            sudo systemctl start "${servChk}.service"
-        fi
-
-    done < "${scrDir}/system_ctl.lst"
+# idk how to make it different way :(
+sudo ln -s /etc/dinit.c/user/dbus ~/.config/dinit.d/
+sudo ln -s /etc/dinit.c/user/pipewire ~/.config/dinit.d/
+sudo ln -s /etc/dinit.c/user/pipewire-pulse ~/.config/dinit.d/
+sudo ln -s /etc/dinit.c/user/wireplumber ~/.config/dinit.d/
+sudo dinitctl enable dbus
+sudo dinitctl enable bluetoothd
+sudo dinitctl enable backlight
+sudo dinitctl enable turnstile
+dinitctl enable dbus
+dinitctl enable pipewire
+dinitctl enable pipewire-pulse
+dinitctl enable wireplumber
 fi
