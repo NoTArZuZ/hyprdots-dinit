@@ -208,7 +208,10 @@ if [ ${flg_Service} -eq 1 ]; then
 
 EOF
 # idk how to make it different way :(
-echo "enabling services..."
+echo "setting up services..."
+mkdir -p ~/.config/dinit.d/boot.d
+touch ~/.config/dinit.d/boot
+echo -e "type=internal\nwaits-for.d=boot.d" > ~/.config/dinit.d/boot
 sudo ln -s /etc/dinit.c/user/dbus ~/.config/dinit.d/
 sudo ln -s /etc/dinit.c/user/pipewire ~/.config/dinit.d/
 sudo ln -s /etc/dinit.c/user/pipewire-pulse ~/.config/dinit.d/
