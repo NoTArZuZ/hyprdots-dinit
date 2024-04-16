@@ -15,6 +15,19 @@ bluez-utils                                            # bluetooth utility cli
 blueman                                                # bluetooth manager gui
 brightnessctl                                          # screen brightness control
 
+# --------------------------------------------------- // Dinit Services
+bluez-dinit                                            # service for dinit
+backlight-dinit                                        # service for dinit
+dbus-dinit                                             # service for dinit
+dbus-dinit-user                                        # service for dinit
+networkmanager-dinit                                   # service for dinit
+pipewire-dinit                                         # service for dinit
+pipewire-pulse-dinit                                   # service for dinit
+sddm-dinit                                             # service for dinit
+wireplumber-dinit                                      # service for dinit
+turnstile                                              # service for dinit
+turnstile-dinit                                        # service for dinit
+
 # --------------------------------------------------- // Display Manager
 sddm                                                   # display manager for KDE plasma
 qt5-quickcontrols                                      # for sddm theme ui elements
