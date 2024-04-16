@@ -212,6 +212,7 @@ sudo ln -s /etc/dinit.c/user/dbus ~/.config/dinit.d/
 sudo ln -s /etc/dinit.c/user/pipewire ~/.config/dinit.d/
 sudo ln -s /etc/dinit.c/user/pipewire-pulse ~/.config/dinit.d/
 sudo ln -s /etc/dinit.c/user/wireplumber ~/.config/dinit.d/
+dinit -q &
 sudo dinitctl enable dbus
 sudo dinitctl enable bluetoothd
 sudo dinitctl enable backlight
