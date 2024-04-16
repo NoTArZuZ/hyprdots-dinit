@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 # Check release
-if [ ! -f /etc/arch-release ] ; then
-    exit 0
-fi
+# if [ ! -f /etc/arch-release ] ; then
+#     exit 0
+# fi
 
 # source variables
 scrDir=$(dirname "$(realpath "$0")")
