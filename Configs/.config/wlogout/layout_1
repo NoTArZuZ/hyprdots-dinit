@@ -14,28 +14,28 @@
 
 {
     "label" : "suspend",
-    "action" : "swaylock -f && systemctl suspend",
+    "action" : "swaylock -f && pkexec suspend",
     "text" : "Suspend",
     "keybind" : "u"
 }
 
 {
     "label" : "shutdown",
-    "action" : "systemctl poweroff",
+    "action" : "pkexec poweroff",
     "text" : "Shutdown",
     "keybind" : "s"
 }
 
 {
     "label" : "hibernate",
-    "action" : "systemctl hibernate",
+    "action" : "pkexec hibernate",
     "text" : "Hibernate",
     "keybind" : "h"
 }
 
 {
     "label" : "reboot",
-    "action" : "systemctl reboot",
+    "action" : "pkexec reboot",
     "text" : "Reboot",
     "keybind" : "r"
 }
