@@ -19,10 +19,6 @@ case ${archrepos} in
     * ) exit 1;;
 esac
 
-mkdir -p ~/.config/dinit.d/boot.d
-touch ~/.config/dinit.d/boot
-echo -e "type=internal\nwaits-for.d=boot.d" > ~/.config/dinit.d/boot
-
 # grub
 if pkg_installed grub && [ -f /boot/grub/grub.cfg ]; then
     echo -e "\033[0;32m[BOOTLOADER]\033[0m detected // grub"
