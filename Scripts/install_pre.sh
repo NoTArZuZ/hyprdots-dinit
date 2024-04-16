@@ -11,6 +11,14 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
+echo "WARNING: before you continue you need to connect Arch repos to pacman [extra] and [multilib]"
+read -p "Press y to continue or n to abort: " archrepos
+case ${archrepos} in
+    [Yy]* ) echo "Continuing...";;
+    [Nn]* ) exit 1;;
+    * ) exit 1;;
+esac
+
 # grub
 if pkg_installed grub && [ -f /boot/grub/grub.cfg ]; then
     echo -e "\033[0;32m[BOOTLOADER]\033[0m detected // grub"
@@ -77,7 +85,6 @@ if [ -f /etc/pacman.conf ] && [ ! -f /etc/pacman.conf.t2.bkp ]; then
     sudo sed -i "/^#Color/c\Color\nILoveCandy
     /^#VerbosePkgLists/c\VerbosePkgLists
     /^#ParallelDownloads/c\ParallelDownloads = 5" /etc/pacman.conf
-    sudo sed -i '/^#\[multilib\]/,+1 s/^#//' /etc/pacman.conf
 
     sudo pacman -Syyu
     sudo pacman -Fy
