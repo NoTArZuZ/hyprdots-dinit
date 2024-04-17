@@ -233,6 +233,7 @@ sudo dinitctl enable bluetoothd
 sudo dinitctl enable backlight
 sudo dinitctl enable turnstiled
 dinit -q &
+echo -e "If script failed on this moment, try to enable user services yourself\ndbus pipewire pipewire-pulse wireplumber\nand then sddm"
 dinitctl enable dbus
 dinitctl enable pipewire
 dinitctl enable pipewire-pulse
