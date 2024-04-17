@@ -1,5 +1,3 @@
-# (WIP) Install on your own risk!
-
 ###### *<div align = right><sub>// design by t2</sub></div>*
 <div align = center><img src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/hyprdots_banner.png"><br><br>
 
@@ -34,6 +32,7 @@ For Debian, please refer **Senshi111**'s version [here](https://github.com/Sensh
 Checkout **Ksk**'s [video](https://www.youtube.com/watch?v=mb8h1-LB9K0) for full installation walkthrough.
 
 > [!IMPORTANT]
+> **This script is not well tested on laptop or desktop**
 > Install script will auto-detect nvidia card and install nvidia-dkms drivers for your kernel.
 > So please ensure that your Nvidia card supports [dkms](https://wiki.archlinux.org/title/NVIDIA) drivers and hyprland.
 
