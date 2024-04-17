@@ -238,6 +238,5 @@ dinitctl enable dbus
 dinitctl enable pipewire
 dinitctl enable pipewire-pulse
 dinitctl enable wireplumber
-sleep 1
 sudo dinitctl enable sddm
 fi
