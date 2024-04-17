@@ -217,6 +217,7 @@ if [ ${flg_Service} -eq 1 ]; then
 EOF
 # idk how to make it different way :(
 
+sudo cp /etc/pacman.conf /etc/pacman.conf.t3.bkp
 sudo sed -i "/^SigLevel    = Never/c\SigLevel    = Required DatabaseOptional" /etc/pacman.conf
 
 echo "[dinit] Setting up services..."
