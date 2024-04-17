@@ -220,10 +220,10 @@ echo "[dinit] Setting up services..."
 mkdir -p ~/.config/dinit.d/boot.d
 touch ~/.config/dinit.d/boot
 echo -e "type=internal\nwaits-for.d=boot.d" > ~/.config/dinit.d/boot
-sudo cp /etc/dinit.c/user/dbus ~/.config/dinit.d/
-sudo cp /etc/dinit.c/user/pipewire ~/.config/dinit.d/
-sudo cp /etc/dinit.c/user/pipewire-pulse ~/.config/dinit.d/
-sudo cp /etc/dinit.c/user/wireplumber ~/.config/dinit.d/
+sudo cp /etc/dinit.d/user/dbus ~/.config/dinit.d/
+sudo cp /etc/dinit.d/user/pipewire ~/.config/dinit.d/
+sudo cp /etc/dinit.d/user/pipewire-pulse ~/.config/dinit.d/
+sudo cp /etc/dinit.d/user/wireplumber ~/.config/dinit.d/
 sudo dinitctl enable dbus
 sudo dinitctl enable bluetoothd
 sudo dinitctl enable backlight
