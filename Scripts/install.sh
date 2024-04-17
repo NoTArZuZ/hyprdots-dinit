@@ -32,7 +32,7 @@ echo "WARNING: before you continue make sure you've connected Arch repos to pacm
 read -p "Press y to continue or n to abort: " archrepos
 case ${archrepos} in
     [Yy]* ) echo "Continuing...";;
-    [Nn]* ) exit 1;;
+    [Nn]* ) echo "Exiting..."; exit 1;;
     * ) exit 1;;
 esac
 
