@@ -28,7 +28,7 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-echo "WARNING: before you continue make sure you've connected Arch repos to pacman [extra] and [multilib] also set SigLevel = Never"
+echo "WARNING: before you continue make sure you've connected Arch repos to pacman [extra] and [multilib]"
 read -p "Press y to continue or n to abort: " archrepos
 case ${archrepos} in
     [Yy]* ) echo "Continuing...";;
