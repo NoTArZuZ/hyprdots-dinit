@@ -58,9 +58,6 @@ cd ~/Hyprdots/Scripts
 Please reboot after the install script completes and takes you to sddm login screen (or black screen) for the first time.
 For more details, please refer [installation wiki](https://github.com/prasanthrangan/hyprdots/wiki/Installation)
 
-## Bugs
-After first time you login to hyprland, some scripts won't work properly **(fix: just change wallpaper)**
-
 ### Updating
 To update Hyprdots you will need to pull the latest changes from github and restore the configs by doing -
 
@@ -82,6 +79,7 @@ git pull
 
 ## Bugs
 After first time you login to hyprland, some scripts won't work properly **(fix: just change wallpaper)**
+
 
 ## Themes
 
