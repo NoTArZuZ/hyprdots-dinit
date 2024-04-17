@@ -80,6 +80,9 @@ git pull
 [<kbd> <br> 🡅 <br> </kbd>](#-design-by-t2)
 </div>
 
+## Bugs
+After first time you login to hyprland, some scripts won't work properly **(fix: just change wallpaper)**
+
 ## Themes
 
 To create your own custom theme, please refer [theming wiki](https://github.com/prasanthrangan/hyprdots/wiki/Theming)
