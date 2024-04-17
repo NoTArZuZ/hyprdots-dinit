@@ -216,7 +216,7 @@ if [ ${flg_Service} -eq 1 ]; then
 
 EOF
 # idk how to make it different way :(
-echo "setting up services..."
+echo "[dinit] Setting up services..."
 mkdir -p ~/.config/dinit.d/boot.d
 touch ~/.config/dinit.d/boot
 echo -e "type=internal\nwaits-for.d=boot.d" > ~/.config/dinit.d/boot
