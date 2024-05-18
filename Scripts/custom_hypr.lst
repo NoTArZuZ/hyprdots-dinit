@@ -26,7 +26,8 @@ pipewire-dinit                                         # service for dinit
 pipewire-pulse-dinit                                   # service for dinit
 sddm-dinit                                             # service for dinit
 wireplumber-dinit                                      # service for dinit
-elogind-dinit                                          # service for dinit
+turnstile                                              # service for dinit
+turnstile-dinit                                        # service for dinit
 
 # --------------------------------------------------- // Display Manager
 sddm                                                   # display manager for KDE plasma
